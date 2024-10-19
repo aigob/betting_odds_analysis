@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>betting_odds_analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,10 +7516,11 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>This project aims to analyze betting odds data from various bookmakers alongside the outcomes of Premier League matches (Season 2023/2024). The objective is to determine which bookmaker consistently offers the best value odds for different match outcomes.</p>
+<h1 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h1><p>This project aims to analyze betting odds data from various bookmakers alongside the outcomes of Premier League matches (Season 2023/2024). The objective is to determine which bookmaker consistently offers the best value odds for different match outcomes.</p>
 <p>The dataset includes match data such as the teams playing, scores, and several odds from multiple bookmakers (e.g., Bet365, BetVictor). By performing data cleaning, exploratory analysis, and comparisons, we will identify trends in the odds and determine if some bookmakers offer better odds consistently across the matches.</p>
 <p>The dataset used in this project was sourced from <strong>Football-data.co.uk (<a href="https://www.football-data.co.uk/englandm.php">https://www.football-data.co.uk/englandm.php</a>)</strong>.</p>
 <p>Ultimately, this analysis will provide insights into which bookmakers offer the highest potential returns for bettors based on historical data.</p>
+<h3 id="Disclaimer">Disclaimer<a class="anchor-link" href="#Disclaimer">¶</a></h3><p>This project is for educational purposes only. The analysis and conclusions drawn are based on historical data and should not be used for real-world betting or financial decision-making. No guarantees or warranties are provided regarding the accuracy of the analysis or the data used.</p>
 </div>
 </div>
 </div>
@@ -7578,7 +7579,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -7600,7 +7601,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7777,7 +7778,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Display the DataFrame's information (data types, non-null values, memory usage)</span>
@@ -7810,7 +7811,7 @@ memory usage: 314.8+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Identify missing values in the dataset</span>
@@ -7834,7 +7835,7 @@ memory usage: 314.8+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>BWH          2
 BWD          2
@@ -7864,7 +7865,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Remove columns with more than 10% missing data</span>
@@ -7886,7 +7887,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Get data types of each column that still has missing values</span>
@@ -7910,7 +7911,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'BWH': dtype('float64'),
  'BWD': dtype('float64'),
@@ -7933,7 +7934,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fill in missing values with the median of each column</span>
@@ -7955,7 +7956,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Check if there are any remaining missing values in the data</span>
@@ -7971,7 +7972,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'No missing values found'</pre>
 </div>
@@ -8018,7 +8019,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Remove all columns except odds for Home, Away, Draw, and Over/Under 2.5 goals per game, and store in a new DataFrame: league_HAD_OU</span>
@@ -8044,7 +8045,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Sort columns in alphabetical order and print the top five rows to review the new DataFrame: league_HAD_OU</span>
@@ -8061,7 +8062,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8225,7 +8226,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Create new columns to identify the MIN and MAX odds and bookies for each outcome of each event</span>
@@ -8264,7 +8265,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8441,7 +8442,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">league_HAD_OU</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -8513,7 +8514,7 @@ memory usage: 115.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Plot Max and Min Odds for Outlier Detection</span>
@@ -8594,7 +8595,7 @@ memory usage: 115.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">averages</span> <span class="o">=</span> <span class="p">{}</span>
@@ -8618,7 +8619,7 @@ memory usage: 115.9+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'B365&lt;2.5': 2.418394736842105,
  'B365&gt;2.5': 1.6390789473684209,
@@ -8648,7 +8649,7 @@ memory usage: 115.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Split the dictionary created (with average odds) by market for each bookie</span>
@@ -8680,7 +8681,7 @@ memory usage: 115.9+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'&lt;2.5': [('B365&lt;2.5', 2.418394736842105), ('P&lt;2.5', 2.4231842105263155)],
  '&gt;2.5': [('B365&gt;2.5', 1.6390789473684209), ('P&gt;2.5', 1.6682105263157896)],
@@ -8710,7 +8711,7 @@ memory usage: 115.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Plot average odds of each market and for each bookmaker </span>
@@ -8765,7 +8766,7 @@ memory usage: 115.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fix the grouping of averages per market</span>
@@ -8801,7 +8802,7 @@ memory usage: 115.9+ KB
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'&lt;2.5': [('B365&lt;2.5', 2.418394736842105), ('P&lt;2.5', 2.4231842105263155)],
  '&gt;2.5': [('B365&gt;2.5', 1.6390789473684209), ('P&gt;2.5', 1.6682105263157896)],
@@ -8829,7 +8830,7 @@ memory usage: 115.9+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Plot average odds of each market and for each bookmaker </span>
@@ -8886,19 +8887,39 @@ memory usage: 115.9+ KB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Research-Project-Summary">Research Project Summary<a class="anchor-link" href="#Research-Project-Summary">¶</a></h1><p>This research project aimed to analyze and compare betting odds across various bookmakers for different football markets, including Home, Away, Draw, Over 2.5 goals, and Under 2.5 goals. The primary objective was to explore which bookmakers offer the highest value in terms of odds for different betting markets. The following steps were taken to achieve this:</p>
-<h3 id="1.-Data-Preparation-and-Filtering:">1. Data Preparation and Filtering:<a class="anchor-link" href="#1.-Data-Preparation-and-Filtering:">¶</a></h3><ul>
-<li>The initial dataset was filtered to include only the relevant columns related to the Home, Away, Draw, Over 2.5, and Under 2.5 betting markets.</li>
-<li>Outliers were detected and discussed using boxplots to identify any extreme odds that could influence the analysis.</li>
+<h1 id="Research-Project-Summary">Research Project Summary<a class="anchor-link" href="#Research-Project-Summary">¶</a></h1><p>This project aimed to analyze and compare betting odds data from various bookmakers for different Premier League football markets, including Home Win, Away Win, Draw, Over 2.5 goals, and Under 2.5 goals. The objective was to identify which bookmakers consistently offer the best value odds across different match outcomes. The following steps were performed in the analysis:</p>
+<h3 id="1.-Data-Inspection-and-Cleaning:">1. Data Inspection and Cleaning:<a class="anchor-link" href="#1.-Data-Inspection-and-Cleaning:">¶</a></h3><ul>
+<li>The dataset initially contained <strong>380 rows</strong> and <strong>106 columns</strong>, with a variety of columns related to match data and odds from different bookmakers.</li>
+<li>Several columns had missing values, and those with more than <strong>10%</strong> missing data were removed. This included columns like <em>IWH</em>, <em>IWD</em>, <em>IWA</em>, and others. A few columns such as <em>MaxCAHH</em> and <em>MaxCAHA</em> with sparse missing values were also dropped to maintain data quality.</li>
+<li>After removing these columns, the dataset was reduced to <strong>100 columns</strong>, significantly improving its usability.</li>
+<li>For the remaining columns with small amounts of missing data, missing values were filled using the <strong>median</strong> of each column. This step ensured no missing data would interfere with the analysis.</li>
+<li>After the cleaning process, the dataset was ready for analysis, containing relevant match outcomes, bookmaker odds, and the filled missing data.</li>
 </ul>
-<h3 id="2.-Exploratory-Data-Analysis-(EDA):">2. Exploratory Data Analysis (EDA):<a class="anchor-link" href="#2.-Exploratory-Data-Analysis-(EDA):">¶</a></h3><ul>
-<li>The analysis involved calculating the average odds for each bookmaker and splitting the data by market groups to visualize and compare odds across different bookmakers.</li>
-<li>This step also identified and addressed issues related to misgrouped market names (e.g., 'H' being confused with 'WHA' and 'WHD'), which were fixed by adjusting the string matching logic in the code.</li>
-<li>Various visualizations, including line charts and boxplots, were generated to compare bookmaker odds across different markets, revealing that bookmaker <strong>PS</strong> tends to offer the highest value for bettors, although the difference was marginal compared to competitors.</li>
+<h3 id="2.-Data-Preparation-and-Filtering:">2. Data Preparation and Filtering:<a class="anchor-link" href="#2.-Data-Preparation-and-Filtering:">¶</a></h3><ul>
+<li>The cleaned dataset was filtered to include only the relevant columns related to the <strong>Home, Away, Draw</strong>, and <strong>Over/Under 2.5 goals</strong> markets.</li>
+<li>New columns were added to identify the <strong>Max</strong> and <strong>Min</strong> odds for each market and the bookmakers offering those odds.</li>
+<li>Outlier detection was performed using <strong>boxplots</strong> to visualize and discuss the distribution of odds, especially focusing on extreme values that could distort the analysis. Some outliers were considered normal due to the nature of football betting odds, where bookmakers often offer high odds for underdogs.</li>
 </ul>
-<h3 id="3.-Final-Findings:">3. Final Findings:<a class="anchor-link" href="#3.-Final-Findings:">¶</a></h3><ul>
-<li>After analyzing the plotted charts, it was concluded that <strong>PS</strong> offers the highest odds in most markets, providing the best value for bettors, but the margin is relatively small.</li>
+<h3 id="3.-Exploratory-Data-Analysis-(EDA):">3. Exploratory Data Analysis (EDA):<a class="anchor-link" href="#3.-Exploratory-Data-Analysis-(EDA):">¶</a></h3><ul>
+<li>Average odds were calculated for each bookmaker in different markets to facilitate comparison.</li>
+<li>The analysis also included grouping the odds by market and generating line charts to compare the odds provided by different bookmakers.</li>
+<li>An issue related to misgrouping of market names (e.g., <em>H</em> being confused with <em>WHA</em> and <em>WHD</em>) was identified and fixed by adjusting the string-matching logic to ensure proper grouping.</li>
+<li>Visualizations, such as <strong>line charts</strong> and <strong>boxplots</strong>, were generated to explore trends in the odds and identify which bookmaker consistently offers better odds across various markets.</li>
 </ul>
+<h3 id="4.-Final-Findings:">4. Final Findings:<a class="anchor-link" href="#4.-Final-Findings:">¶</a></h3><ul>
+<li>After analyzing the data, it was found that <strong>PS</strong> offers the highest value odds in most markets. However, the margin of difference between PS and other bookmakers is relatively small.</li>
+<li>The analysis concludes that, while <strong>PS</strong> might be the best option for maximizing returns in some cases, bettors should also consider other bookmakers, as differences in odds are not always substantial.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
