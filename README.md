@@ -23,38 +23,40 @@ The dataset used in this project was obtained from Football-data.co.uk (https://
 To run this project on your local machine, follow these steps:
 
 1. **Clone the repository**:
-git clone https://github.com/your-username/betting-odds-analysis.git
+   git clone https://github.com/your-username/betting-odds-analysis.git
 
-2. **Navigate  to the project directory**:
-cd betting-odds-analysis
+2. **Navigate to the project directory**:
+   cd betting-odds-analysis
 
 3. **Install the required dependencies**:
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. **Run the Jupyter notebook**:
-jupyter notebook betting_odds_analysis.ipynb
+   jupyter notebook betting_odds_analysis.ipynb
 
 5. **Open the notebook in Jupyter and run all the cells to reproduce the analysis and visualizations.**
 
-Key Findings
-------------
+## Key Findings
+
 After analyzing the betting odds data, bookmaker PS was found to offer the highest value odds in most markets (Home, Away, Draw). However, the difference between bookmakers was marginal, indicating that no single bookmaker consistently provides a significantly better value than others across all markets.
 
-Visualizations
--------------
+## Visualizations
+
 The project generated several visualizations, including:
 
 Boxplots: Used to detect outliers and understand the distribution of odds across different markets and bookmakers.
 Line plots: Created to compare the average odds for each bookmaker in specific markets (Home, Away, Draw, Over 2.5, Under 2.5).
 These visualizations helped identify which bookmakers tend to offer higher odds in various markets, providing insights for potential bettors.
 
-Future Work
-------------
+## Future Work
+
 Possible extensions of this project include:
 
 Extending the analysis to other football leagues or other seasons.
 Adding additional betting markets or comparing odds for different sports.
 Performing more advanced statistical modeling to predict which bookmakers will offer the best odds in future events.
 
+
 ## Disclaimer
+
 This project is for educational purposes only. The analysis and conclusions drawn are based on historical data and should not be used for real-world betting or financial decision-making. No guarantees or warranties are provided regarding the accuracy of the analysis or the data used.
